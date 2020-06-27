@@ -9,6 +9,7 @@ export default ({ children }) => {
       query {
         site {
           siteMetadata {
+            logo
             title
           }
         }
@@ -19,6 +20,7 @@ export default ({ children }) => {
     <div className="site-wrapper">
       <header className="site-header">
         <div className="site-title">
+          <img style={{width:"50px", paddingRight: "15px"}} src={data.site.siteMetadata.logo}></img>
           <Link to="/">{data.site.siteMetadata.title}</Link>
         </div>
         <Navigation />

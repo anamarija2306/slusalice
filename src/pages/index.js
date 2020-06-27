@@ -36,6 +36,7 @@ export const pageQuery = graphql`
   query indexPageQuery {
     site {
       siteMetadata {
+        logo
         title
         description
       }

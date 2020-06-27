@@ -18,6 +18,10 @@ collections:
             name: title
             label: Site Title
             required: true
+          - widget: image
+            name: logo
+            label: Site Logo
+            required: true
           - widget: string
             name: siteUrl
             label: Website URL
@@ -41,12 +45,16 @@ collections:
                 label: Description
                 default: ''
                 required: false
- - name: slus
-    label: Slusalice
-    fields:
-      - name: content
-        label: Content
-        widget: string
+  - name: pages
+    label: Pages
+    files:
+      - name: slus
+        label: Slus
+        file: _pages/slus.md
+        fields:
+          - name: content
+            label: Content
+            widget: string
 
   - name: blog
     label: Blog
