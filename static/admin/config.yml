@@ -41,6 +41,13 @@ collections:
                 label: Description
                 default: ''
                 required: false
+ - name: slus
+    label: Slusalice
+    fields:
+      - name: content
+        label: Content
+        widget: string
+
   - name: blog
     label: Blog
     folder: _data/blog
