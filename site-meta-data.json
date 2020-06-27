@@ -1,5 +1,6 @@
 {
   "title": "Slusalice",
+  "logo": "/assets/headphones_icon.svg",
   "siteUrl": "https://delog-w3layouts.netlify.com/",
   "description": "Delog, a GatsbyJS and Netlify CMS starter for Designers and Developers",
   "home": {
