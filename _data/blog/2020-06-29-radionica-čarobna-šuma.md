@@ -3,6 +3,7 @@ template: BlogPost
 path: /radionica-carobna-suma
 date: 2020-06-29T17:18:57.826Z
 title: 'Radionica: Čarobna šuma'
+metaDescription: Radionica
 thumbnail: /assets/86624134_170063034424737_1851488533617836032_n.jpg
 ---
 <!--StartFragment-->
