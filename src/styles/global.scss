@@ -14,7 +14,7 @@ body.light {
   --primary-text-color: #fff;
   --featured-bg: #7d9d94;
   --featured-text: #fff;
-  --secondary-color: #10072b;
+  --secondary-color: #222;
   --background: #fff;
   --site-header: var(--background);
   --card-bg: #fff;
@@ -24,7 +24,7 @@ body.light {
   --btn-bdr: #d3d6e7;
   --btn-text-color: #89b7a9;
   --btn-hover-bg: var(--btn-bdr);
-  --btn-hover-text-color: #00062b;
+  --btn-hover-text-color: #222;
   --contact-bg: #bfd9d1;
   --contact-bdr: #bfd9d1;
   --input-bg: var(--background);
@@ -35,11 +35,11 @@ body.dark {
   --featured-bg: #7d9d94;
   --featured-text: #fff;
   --secondary-color: #89b7a9;
-  --background: #4a5154;
+  --background: #222;
   --text-color: rgba(255, 255, 255, 0.88);
   --text-secondary-color: rgba(255, 255, 255, 0.66);
   --site-header: var(--background);
-  --card-bg: #181326;
+  --card-bg: #222;
   --card-bdr: #181326;
   --card-shadow: #020204;
   --btn-bg: var(--background);
@@ -106,6 +106,7 @@ a {
   text-decoration: none;
   font-weight: 900;
   text-transform: uppercase;
+  font-size: 36px;
 }
 .hero-header {
   padding: 0 0 64px;
