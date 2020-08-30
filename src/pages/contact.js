@@ -3,17 +3,24 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
-const ContactPage = ({ data: { site } }) => {
+const ContactPage = (props) => {
   return (
     <Layout>
       <Helmet>
-        <title>Contact — {site.siteMetadata.title}</title>
-        <meta
-          name="description"
-          content={"Contact page of " + site.siteMetadata.description}
-        />
+        <title>Contact</title>
+        <meta name="description" content="Contact page" />
       </Helmet>
-      <div className="two-grids -contact">
+      <div className="two-grids">
+        <div className="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.8225488529833!2d15.99376965150425!3d45.77474642058571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d60a2f776907%3A0x9caa6ecf3b61251!2sBalotin%20prilaz%204%2C%2010000%2C%20Zagreb!5e0!3m2!1sen!2shr!4v1598817871679!5m2!1sen!2shr"
+            width="100%"
+            height={650}
+            frameborder={0}
+            style={{ border: "0", borderRadius: "9px", margin: "auto" }}
+            tabindex={0}
+          ></iframe>
+        </div>
         <div
           className="post-thumbnail"
           style={{
@@ -21,53 +28,14 @@ const ContactPage = ({ data: { site } }) => {
             marginBottom: 0,
           }}
         >
-          <h1 className="post-title">Pitajte logopeda</h1>
-          <p>Obratite nam se s povjerenjem!</p>
-        </div>
-        <div>
-          <form
-            className="form-container"
-            action="https://sendmail.w3layouts.com/SubmitContactForm"
-            method="post"
-          >
-            <div>
-              <label htmlFor="w3lName">Ime</label>
-              <input type="text" name="w3lName" id="w3lName" />
-            </div>
-            <div>
-              <label htmlFor="w3lSender">Email</label>
-              <input type="email" name="w3lSender" id="w3lSender" />
-            </div>
-            <div>
-              <label htmlFor="w3lSubject">Naslov</label>
-              <input type="text" name="w3lSubject" id="w3lSubject" />
-            </div>
-            <div>
-              <label htmlFor="w3lMessage">Poruka</label>
-              <textarea name="w3lMessage" id="w3lMessage"></textarea>
-            </div>
-            <div style={{ display: "flex", justifyContent: "flex-end" }}>
-              <input
-                type="submit"
-                value="Pošalji"
-                className="button -primary"
-                style={{ marginRight: 0 }}
-              />
-            </div>
-          </form>
+          <h1 className="post-title">
+            Adresa: Balotin prilaz 4, 10 000 Zagreb
+          </h1>
+          <h1 className="post-title">Kontakt: +385 95 1969 511</h1>
         </div>
       </div>
     </Layout>
   );
 };
+
 export default ContactPage;
-export const pageQuery = graphql`
-  query ContactPageQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`;

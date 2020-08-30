@@ -17,7 +17,7 @@ const AskPage = ({ data: { site } }) => {
         <div
           className="post-thumbnail"
           style={{
-            backgroundImage: `url('/assets/photo-1523966211575-eb4a01e7dd51.jpg')`,
+            backgroundImage: `url("https://images.pexels.com/photos/3958381/pexels-photo-3958381.jpeg")`,
             marginBottom: 0,
           }}
         >
