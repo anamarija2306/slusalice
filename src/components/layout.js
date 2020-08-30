@@ -30,11 +30,11 @@ export default ({ children }) => {
       {children}
       <footer className="site-footer">
         <p>
-          &copy; {new Date().getFullYear()} Delog &bull; Crafted with{" "}
+          &copy; {new Date().getFullYear()} Slušalice &bull; Created with{" "}
           <span role="img" aria-label="love">
-            ❤️
+            🤍
           </span>{" "}
-          by <a href="https://w3layouts.com">W3Layouts</a>
+          by <a href="mailto:anamarija.lonza@gmail.com">Anamarija</a>
         </p>
       </footer>
     </div>
