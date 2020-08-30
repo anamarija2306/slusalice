@@ -28,10 +28,8 @@ const ContactPage = (props) => {
             marginBottom: 0,
           }}
         >
-          <h1 className="post-title">
-            Adresa: Balotin prilaz 4, 10 000 Zagreb
-          </h1>
-          <h1 className="post-title">Kontakt: +385 95 1969 511</h1>
+          <h1 className="contact-title">Balotin prilaz 4, 10 000 Zagreb</h1>
+          <h1 className="contact-title"> +385 95 1969 511</h1>
         </div>
       </div>
     </Layout>
